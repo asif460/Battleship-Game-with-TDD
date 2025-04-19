@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8ebe5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .game-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+  }
+  
+  .gameboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .gameboard .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 1px;
+  }
+  
+  .gameboard .cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .gameboard .ship {
+    background-color: #87ceeb;
+  }
+  
+  .gameboard .hit {
+    background-color: #ffa500;
+  }
+  
+  .gameboard .sunk {
+    background-color: #ff6347;
+  }
+  
+  .gameboard .miss {
+    background-color: #d3d3d3;
+  }
+  
+  #randomPlaceButton {
+    margin: 7%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  #randomPlaceButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .gameboard .grid-labels {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .gameboard .column-labels {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+  
+  .gameboard .column-labels div {
+    width: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+    font-weight: bold;
+  }
+  
+  .gameboard .grid-container {
+    display: flex;
+  }
+  
+  .gameboard .row-labels {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 5px;
+    height: 100%;
+    gap: 1.2px;
+  }
+  
+  .gameboard .row-labels div {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #888;
+    font-weight: bold;
+  }
+  
+  .gameboard .grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 1px;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #playAgainButton {
+    margin-left: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #playAgainButton:hover {
+    background-color: #0056b3;
+  }
